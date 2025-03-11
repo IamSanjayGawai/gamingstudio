@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Home page</title>
+  </head>
+
+  <body>
+    <div class="wrapper container-fluid">
+      <div class="header-section">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/logo/logo.png" alt="" class="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#vision">Vision</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#educations">Educations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar :close -->
+
+        <!-- Hero Section -->
+        <div class="hero-section" id="#">
+          <!-- Background Video -->
+          <!-- <video autoplay muted loop class="background-video">
+        <source src="https://www.toadsindia.com/front/images/website%20video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+          <img src="assets//img/h1_bg-1.png" alt="" class="background-video" />
+
+          <!-- Overlay to Improve Readability -->
+          <div class="video-overlay"></div>
+
+          <!-- Content on Top of Video -->
+          <div class="content">
+            <h1 class="banner-title">Build. Design. Innovate.</h1>
+            <p>
+              Crafting seamless, responsive, and dynamic web experiences with
+              modern technologies. Specializing in React.js, TypeScript, and
+              UI/UX to bring ideas to life.
+            </p>
+            <button class="custom-button">Conatact</button>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section close -->
+
+      <!-- who we are -->
+      <div class="container mb-5 vision-section" id="vision">
+        <div class="row vision-card">
+          <div class="col-md-7 left-vision">
+            <h2 class="heading-2 mb-4 text-accent mt-2">My Vision</h2>
+            <p class="lead">
+              As a passionate <strong>Full-Stack Developer</strong>, my goal is
+              to create applications that solve real-world problems using modern
+              technologies like
+              <strong>MERN Stack (MongoDB, Express.js, React, Node.js)</strong>,
+              <strong>TypeScript</strong>, and <strong>AI Integration</strong>.
+            </p>
+            <h4 class="mt-4 text-success">My Approach:</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                🚀 <strong>Performance & Scalability:</strong> Designing
+                applications that handle high traffic efficiently.
+              </li>
+              <li class="list-group-item">
+                🎨 <strong>User Experience:</strong> Crafting intuitive and
+                visually appealing UIs with Tailwind CSS and Figma.
+              </li>
+              <li class="list-group-item">
+                🤖 <strong>AI & Automation:</strong> Enhancing applications with
+                AI-driven features.
+              </li>
+              <li class="list-group-item">
+                🧠 <strong>Problem-Solving:</strong> Utilizing Data Structures &
+                Algorithms for optimized solutions.
+              </li>
+              <li class="list-group-item">
+                💡 <strong>Continuous Learning:</strong> Staying ahead with
+                Web3, AI, and Cloud Computing.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 right-vision">
+            <img
+              src="assets/img/profile-img.png"
+              alt=""
+              class="img-fluid rounded-15"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- who we are:close -->
+
+      <!-- Counter Section -->
+      <div class="container mb-10 counter-section">
+        <div class="row text-center">
+          <div class="col-6 col-md-3 stat">
+            <div>
+              <span class="number text-accent" data-target="1.2">0</span>
+              <span class="plus text-accent">+</span>
+            </div>
+            <div class="description">Year of Experience</div>
+          </div>
+          <div class="col-6 col-md-3 stat">
+            <div>
+              <span class="number text-accent" data-target="10">0</span>
+              <span class="plus text-accent">+</span>
+            </div>
+            <div class="description">Projects Done</div>
+          </div>
+          <div class="col-6 col-md-3 stat">
+            <div>
+              <span class="number text-accent" data-target="75">0</span>
+              <span class="plus text-accent">+</span>
+            </div>
+            <div class="description">Bugs Solved</div>
+          </div>
+          <div class="col-6 col-md-3 stat">
+            <div>
+              <span class="number text-accent" data-target="1000">0</span>
+              <span class="plus text-accent">+</span>
+            </div>
+            <div class="description">Linkedin Connections</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Counter Section closed -->
+
+      <!-- about -->
+      <div class="container-fluid mb-5 our-features" id="experience">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h2 class="heading-2 text-white">My Experience</h2>
+              <p class="text-white mb-5"></p>
+            </div>
+            <div class="col-md-4">
+              <!-- <div class="fire">
+                                        <img src="assets/img/fire.png" alt="" class="img-fluid">
+                                    </div>
+         -->
+              <div class="model">
+                <img src="assets/img/model2.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5 heading-2">01.</p>
+                  <h4 class="card-title">Frontend & Full-Stack Developer</h4>
+                  <ul class="card-text">
+                    <li>
+                      Led frontend development and collaborated on backend APIs.
+                    </li>
+                    <li>
+                      Built and optimized web applications using React.js,
+                      Tailwind CSS, and TypeScript.
+                    </li>
+                    <li>
+                      Developed a rental platform handling over 1,000+ monthly
+                      active users while reducing infrastructure costs by 35%.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5 heading-2">02.</p>
+                  <h4 class="card-title">Teaching & Mentorship</h4>
+                  <ul class="card-text">
+                    <li>
+                      Served as a Teaching Assistant at Coding Ninjas, where I
+                      helped 90+ students with React.js concepts and
+                      problem-solving.
+                    </li>
+                    <li>
+                      Conducted code reviews and debugging sessions to enhance
+                      students' understanding.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5 heading-2">03.</p>
+                  <h4 class="card-title">Internship</h4>
+                  <ul class="card-text">
+                    <li>
+                      Completed a Frontend Developer Internship at VibenCode,
+                      working on UI/UX improvements and optimizing web
+                      performance.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about :close -->
+
+      <!-- our work  -->
+      <div class="container" id="projects">
+        <div class="work-up">
+          <h2 class="heading-2 text-accent mb-4">My Projects</h2>
+          <div class="d-flex gap-4 mb-5">
+            <!-- <button class="custom-button">view all</button> -->
+            <p class="mb-0"></p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>Asnaro</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      I developed the official website for Toads Academy, the
+                      educational division of Flying Toads, India’s leading VFX
+                      studio. The academy specializes in Animation, VFX, and
+                      Game Development, offering world-class training backed by
+                      over 20 years of industry expertise. The website serves as
+                      a digital hub for aspiring artists to explore courses,
+                      access resources, and connect with industry professionals
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img src="assets/projects/toads.png" alt="" class="img-fluid" />
+                <div class="view-project d-flex gap-4">
+                  <a href="https://toads-svdq.vercel.app/">
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a href="https://toads-svdq.vercel.app/"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>Asnaro</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      ASNARO is an innovative manufacturing marketplace that
+                      bridges the gap between businesses needing specialized
+                      manufacturing processes and those with the capabilities to
+                      fulfill them. The platform optimizes factory operations by
+                      enabling on-demand process ordering, reducing downtime,
+                      and maximizing resource utilization.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/projects/asnaro.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="view-project d-flex gap-4">
+                  <a href="https://asnaro.co.jp">
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a href="https://github.com/IamSanjayGawai/asnaro-webapp"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>Admin Dashboard</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      This project is a modern, interactive dashboard built with
+                      React and TypeScript, designed to integrate various
+                      charting libraries (such as Chart.js or Recharts) for data
+                      visualization. The dashboard includes an admin section to
+                      manage configurations, user roles, and permissions. It
+                      serves as a practice project to refine frontend skills,
+                      focusing on reusable components, performance optimization,
+                      and TypeScript best practices.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/projects/dashboard.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="view-project d-flex gap-4">
+                  <a
+                    href="https://react-admin-dash-board-type-script.vercel.app"
+                  >
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a
+                    href="https://github.com/IamSanjayGawai/React_AdminDashBoard_TypeScript"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>ExpTrack AI</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      An AI-powered financial management platform that helps you
+                      track, analyze, and optimize your spending with real-time
+                      insights. Build a Full Stack AI Finance Platform in React
+                      19 + Next JS 15 with Tailwind CSS, Supabase, Prisma, Clerk
+                      Authentication, Inngest, Arcjet Shadcn UI
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/projects/expenseTracker.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="view-project d-flex gap-4">
+                  <a href="https://expense-project-self.vercel.app">
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a href="https://github.com/IamSanjayGawai/ExpenseProject"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>Lets Shop</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      The Let's Shop project aims to enhance UI development
+                      skills by building an interactive eCommerce interface
+                      using React.js. It focuses on creating a seamless shopping
+                      experience with product listing, cart management, and a
+                      responsive design. The project includes real-time cart
+                      updates and smooth state management. Tailwind CSS is used
+                      for styling to ensure a modern look. It serves as hands-on
+                      practice for improving frontend development proficiency.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/projects/lestshop.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="view-project d-flex gap-4">
+                  <a href="https://lets-shop-webapp.netlify.app">
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a href="https://github.com/IamSanjayGawai/Lets-Shop"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="row project-cards mb-4 cover">
+              <div class="col-md-6 border project-left">
+                <div
+                  class="d-flex justify-content-center align-items-center flex-column p-5 gap-4"
+                >
+                  <h2>Resume Builder</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="">
+                      This Resume Builder is a responsive web application built
+                      with HTML, CSS, and JavaScript, enabling users to enter
+                      their details, select templates, and generate a customized
+                      resume in a structured format. It includes real-time
+                      preview, form validation, and an option to download the
+                      resume as a PDF. The project emphasizes clean UI design,
+                      interactive user experience, and JavaScript-based DOM
+                      manipulation to enhance functionality.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="col-md-6 project-right border d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/projects/resumebuilder.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="view-project d-flex gap-4">
+                  <a href="https://iamsanjaygawai.github.io/Resume_Builder_App">
+                    <button class="custom-button">Live</button></a
+                  >
+                  <a href="https://github.com/IamSanjayGawai/Resume_Builder_App"
+                    ><button class="custom-button">Github</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- our work:Close  -->
+
+        <!-- what we offer -->
+        <div class="container-fluid bg-light rounded-15 p-5" id="educations">
+          <div class="">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="heading-2 mb-4">Educations</h2>
+                <!-- <div class="d-flex gap-4 mb-5">
+                                <button class="custom-button">get a quote</button>
+                                <p>We launch exciting games to the leading platforms of the <br>international market
+                                    with
+                                    unique ideas and art</p>
+                            </div> -->
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-12">
+                <div class="card rounded-10">
+                  <div class="card-body">
+                    <div class="card of-card">
+                      <div class="card-body">
+                        <div class="row justify-content-center gap-4">
+                          <div class="col-md-2 d-flex align-items-end">
+                            <h1 class="heading-1 text-light-hover-primary mb-0">
+                              01
+                            </h1>
+                          </div>
+                          <div class="col-md-5">
+                            <h2
+                              class="heading-3 text-accent fs-4 fs-md-3 fs-lg-2"
+                            >
+                              Bachelor of Technology
+                            </h2>
+                            <div class="hover-animation-block">
+                              <p class="description fs-6">
+                                Completed Bachelor of Technology in Electronics
+                                and Telecommunication Engineering from BATU
+                                University.
+                              </p>
+                              <p class="description fs-6">
+                                CSMSS Chh. Shahu College of Engineering
+                              </p>
+                              <button class="custom-button">7.3 CGPA</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="hover-animation-block">
+                              <img
+                                alt="A futuristic robot character in a sci-fi environment"
+                                class="img-fluid rounded-10 feature-img"
+                                src="assets/img/csmss.jpeg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card of-card">
+                      <div class="card-body">
+                        <div class="row justify-content-center gap-4">
+                          <div class="col-md-2 d-flex align-items-end">
+                            <h1 class="heading-1 text-light-hover-primary mb-0">
+                              02
+                            </h1>
+                          </div>
+                          <div class="col-md-5">
+                            <h2
+                              class="heading-3 text-accent fs-4 fs-md-3 fs-lg-2"
+                            >
+                              Diploma in Computer Science
+                            </h2>
+                            <div class="hover-animation-block">
+                              <p class="description fs-6">
+                                Completed Diploma in Computer Science
+                                Engineering from MSBTE University.
+                              </p>
+                              <p class="description fs-6">
+                                CSMSS College of Polytechnic
+                              </p>
+                              <button class="custom-button">73.50 %</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="hover-animation-block">
+                              <img
+                                alt="A futuristic robot character in a sci-fi environment"
+                                class="img-fluid rounded-10 feature-img"
+                                src="assets/img/csmss.jpeg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card of-card">
+                      <div class="card-body">
+                        <div class="row justify-content-center gap-4">
+                          <div class="col-md-2 d-flex align-items-end">
+                            <h1 class="heading-1 text-light-hover-primary mb-0">
+                              03
+                            </h1>
+                          </div>
+                          <div class="col-md-5">
+                            <h2
+                              class="heading-3 text-accent fs-4 fs-md-3 fs-lg-2"
+                            >
+                              Full Stack development
+                            </h2>
+                            <div class="hover-animation-block">
+                              <p class="description fs-6">
+                                Completed MERN Stack Web Developement Career
+                                Camp Course from Coding Ninjas
+                              </p>
+                              <button class="custom-button">Passed</button>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="hover-animation-block">
+                              <img
+                                alt="A futuristic robot character in a sci-fi environment"
+                                class="img-fluid rounded-10 feature-img"
+                                src="assets/img/service_5.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- what we offer :close -->
+
+        <!-- Award Section start -->
+
+        <div class="award-section" id="awards">
+          <div class="container-fluid text-white py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="d-flex justify-content-between w-100 mb-5 row">
+                <div class="row mb-5">
+                  <div class="col-md-8">
+                    <h2 class="display-4">Cerifications and Courses</h2>
+                    <p class="lead">
+                      We are happy to develop the game development market and
+                      feel responsible for every project we are involved in
+                      creating.
+                    </p>
+                  </div>
+                  <div class="col-md-4 right-award">
+                    <div
+                      class="award-image d-flex justify-content-center justify-content-center"
+                    >
+                      <img
+                        src="./assets/logo/awardlogo.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 r">
+                  <div
+                    class="d-flex justify-content-center w-100 gap-5 row align-items-center"
+                  >
+                    <!-- Images Container -->
+                    <!-- <div class="col-md-2 position-relative">
+                      <img
+                        id="award-2018"
+                        src="./assets/award/award1.webp"
+                        class="award-img d-none img-fluid"
+                        style="max-width: 200px"
+                      />
+                      <img
+                        id="award-2019"
+                        src="./assets/award/award2.webp"
+                        class="award-img d-none img-fluid"
+                        style="max-width: 200px"
+                      />
+                      <img
+                        id="award-2020"
+                        src="./assets/award/award3.webp"
+                        class="award-img d-none img-fluid"
+                        style="max-width: 200px"
+                      />
+                    </div> -->
+
+                    <!-- Award Table -->
+                    <div class="col-md-12">
+                      <div class="d-flex flex-column gap-4">
+                        <div
+                          class="award-item rounded d-flex flex-column flex-md-row justify-content-between text-white"
+                        >
+                          <h3 class="heading-1 fs-6 fs-md-3">
+                            Coding Ninjas - 2023
+                          </h3>
+                          <p class="heading-3 fs-2 fs-md-5">
+                            Frontend Developer (React)
+                          </p>
+                          <span class="heading-1 fs-5 fs-md-4">Excellent</span>
+                        </div>
+                        <hr />
+
+                        <div
+                          class="award-item rounded d-flex flex-column flex-md-row justify-content-between text-white"
+                        >
+                          <h3 class="heading-1 fs-6 fs-md-3">
+                            Coding Ninjas - 2022
+                          </h3>
+                          <p class="heading-3 fs-2 fs-md-5">
+                            Backend Developer (Node.js)
+                          </p>
+                          <span class="heading-1 fs-5 fs-md-4">Good</span>
+                        </div>
+                        <hr />
+
+                        <div
+                          class="award-item rounded d-flex flex-column flex-md-row justify-content-between text-white"
+                        >
+                          <h3 class="heading-1 fs-6 fs-md-3">
+                            NPTEL Certified - 2021
+                          </h3>
+                          <p class="heading-3 fs-2 fs-md-5">
+                            Python Programming
+                          </p>
+                          <span class="heading-1 fs-5 fs-md-4">Elite</span>
+                        </div>
+                        <hr />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Award Section Close -->
+
+        <!-- contact form  -->
+        <div class="container-fluid contact-section py-5" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="heading-2 text-accent">Let's talk</h2>
+                <div class="position-relative w-100">
+                  <img
+                    src="assets/img/h1_img-9.png"
+                    alt=""
+                    class="position-absolute model"
+                  />
+                  <img
+                    src="assets/img/h1_img-7.png"
+                    alt=""
+                    class="position-absolute sticker"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card bg-light border-0">
+                  <div class="card-body p-5">
+                    <p class="fs-5 mb-4 text-muted">
+                      Let's talk about your career growth
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <input
+                          type="Email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <textarea
+                          name=""
+                          id=""
+                          rows="5"
+                          class="form-control mb-4"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <button class="custom-button">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer  -->
+        <footer class="footer rounded-15 ">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/logo/logo1.png" alt="" class="logo" />
+                </a>
+                <p class="fs-6 text-white">
+                  Chh. Sambhaji Nagar, Maharashtra, India - 431105
+                </p>
+                <p class="contact-info text-white fs-6">
+                  <i class="bi bi-phone"> </i>
+                  (+91) 7720990081 | (+91) 7720963396
+                  <br />
+                  <i class="bi bi-email"> </i>
+                  sanjaygawai2022@gmail.com
+                </p>
+              </div>
+
+    
+            </div>
+          </div>
+        </footer>
+        <!-- footer :Close -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- JavaScript for Counter Animation -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".number");
+            const speed = 100; // Adjust speed of counting
+
+            const animateCount = (counter) => {
+              const updateCount = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                  counter.innerText = Math.ceil(count + increment);
+                  setTimeout(updateCount, 25);
+                } else {
+                  counter.innerText = target; // Set to exact target value
+                }
+              };
+              updateCount();
+            };
+
+            // Intersection Observer to start animation when visible
+            const observer = new IntersectionObserver(
+              (entries, observer) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target); // Stop observing once animated
+                  }
+                });
+              },
+              { threshold: 0.5 } // Trigger when 50% is visible
+            );
+
+            counters.forEach((counter) => observer.observe(counter));
+          });
+
+          // Award images
+          document.addEventListener("DOMContentLoaded", function () {
+            const rows = document.querySelectorAll(".table tbody tr");
+            const defaultImage = document.getElementById("award-2018");
+            const awardImages = document.querySelectorAll(".award-img");
+
+            rows.forEach((row) => {
+              row.addEventListener("mouseenter", function () {
+                const awardId = this.getAttribute("data-award");
+
+                // Hide all images
+                awardImages.forEach((img) => img.classList.add("d-none"));
+
+                // Show the correct award image
+                const hoverImage = document.getElementById(awardId);
+                if (hoverImage) {
+                  hoverImage.classList.remove("d-none");
+                }
+              });
+
+              row.addEventListener("mouseleave", function () {
+                // Hide all award images
+                awardImages.forEach((img) => img.classList.add("d-none"));
+
+                // Show the default image again
+                defaultImage.classList.remove("d-none");
+              });
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
